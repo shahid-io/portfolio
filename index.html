@@ -106,6 +106,13 @@
   [data-theme="light"] :is(a, button, summary, label, [role="button"]) {
     cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><rect x='3' y='3' width='13' height='13' rx='2' fill='%2314130f' stroke='%23f4f1ea' stroke-width='1.5'/></svg>") 9 9, pointer;
   }
+  /* I-beam over selectable paragraph text (halo keeps it visible on any bg) */
+  [data-theme="dark"] :is(.synopsis, .prose) {
+    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='26' viewBox='0 0 16 26'><g fill='none' stroke-linecap='round'><path d='M8 5 V21 M4 5 H12 M4 21 H12' stroke='%230c0c0d' stroke-width='3.4'/><path d='M8 5 V21 M4 5 H12 M4 21 H12' stroke='%23e8e6df' stroke-width='1.5'/></g></svg>") 8 13, text;
+  }
+  [data-theme="light"] :is(.synopsis, .prose) {
+    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='26' viewBox='0 0 16 26'><g fill='none' stroke-linecap='round'><path d='M8 5 V21 M4 5 H12 M4 21 H12' stroke='%23f4f1ea' stroke-width='3.4'/><path d='M8 5 V21 M4 5 H12 M4 21 H12' stroke='%2314130f' stroke-width='1.5'/></g></svg>") 8 13, text;
+  }
 
   /* ---- subtle paper grain via repeating lines ---- */
   body::before {
