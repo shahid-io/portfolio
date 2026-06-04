@@ -158,7 +158,8 @@
     font-size: clamp(2.3rem, 8vw, 3.6rem); margin-bottom: 6px;
   }
   .tagline { font-family: var(--serif); font-size: clamp(1.05rem,2.4vw,1.35rem); font-style: italic; color: var(--ink-soft); }
-  .synopsis { font-family: var(--serif); font-size: 1.12rem; line-height: 1.6; color: var(--ink); max-width: 68ch; }
+  .synopsis { font-family: var(--serif); font-size: 1.12rem; line-height: 1.6; color: var(--ink); max-width: 70ch;
+    text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
   .synopsis em { font-style: italic; }
   .synopsis b { font-weight: 600; border-bottom: 1px solid var(--ink); }
 
@@ -188,7 +189,7 @@
   .prose p { margin-bottom: 1.1rem; }
   .prose p:last-child { margin-bottom: 0; }
   .prose b { font-weight: 600; }
-  .prose .term { font-family: var(--mono); font-size: .85em; background: var(--ink); color: var(--paper); padding: 1px 6px; }
+  .prose .term { font-family: var(--mono); font-size: .9em; background: var(--ink); color: var(--paper); padding: 1px 6px; white-space: nowrap; }
 
   /* ---- experience: ledger rows ---- */
   .ledger { display: flex; flex-direction: column; }
@@ -320,9 +321,12 @@
       <div class="k">synopsis</div>
       <div class="synopsis">
         <b>3.5+ years</b> shipping SaaS platforms, scalable microservices, and AI-integrated
-        systems. Lives in the backend — REST &amp; event-driven architecture, database
-        internals, real-time systems. Off the clock: writes <em>devtools</em>, reads a
-        lot, and turns up to meetups.
+        systems across ERP, booking, and analytics products. I live in the backend — REST &amp;
+        event-driven architecture, database internals, caching, and real-time systems that stay
+        honest under load. I care about clean API contracts, data models that age well, and code
+        that's boring in the best way. Off the clock I write <em>devtools</em> — mostly CLIs and
+        local-first software — read a steady stack of systems and language books, and turn up to
+        meetups around Kochi to trade notes with people building the same kinds of things.
       </div>
     </div>
 
